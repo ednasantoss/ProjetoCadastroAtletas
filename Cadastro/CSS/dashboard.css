@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
     user-select: none;
+    scrollbar-width: none;
 }
 
 body {
@@ -12,7 +13,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
 
 .navbar {
     display: flex;
@@ -62,14 +62,15 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
 }
 
 .card-formulario {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 30px;
     background: #B0E0E6;
-    /*  box-shadow: 0 10px 20px #080e0e; */
+    box-shadow: 0 10px 20px #080e0e;
 }
 
 .linha-dupla {
@@ -82,11 +83,11 @@ body {
 input,
 select,
 textarea {
-    padding: 12px;
+    padding: 10px;
     border: 1px solid black;
     border-radius: 6px;
     font-size: 14px;
-    width: 400px;
+    width: 500px;
 }
 
 .btn-salvar {
@@ -162,12 +163,20 @@ textarea {
     text-decoration: underline;
 }
 
-.table-listagem {
-    width: 100%;
-    border-collapse: collapse;
+.p {
     text-align: center;
-    background-color: #B0E0E6;
+    padding: 13px;
+    text-decoration: underline;
+}
 
+.h3{
+    padding: 14px;
+    text-decoration: underline;
+}
+
+.table-listagem {
+    border-collapse: collapse;
+    background-color: #B0E0E6;
 }
 
 .table-listagem thead th {
@@ -191,10 +200,11 @@ textarea {
 }
 
 .campo{
-    padding:10px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 105%; 
+    gap: 10px;
 }
